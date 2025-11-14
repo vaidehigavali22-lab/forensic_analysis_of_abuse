@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forensic Analysis Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-content">
+          <h1 class="title">🔍 Forensic Analysis Tool</h1>
+          <p class="subtitle">Detect abusive messages and analyze sentiment with precision</p>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="card upload-card">
+          <h2>Start Analysis</h2>
+          
+          <form method="post" enctype="multipart/form-data" class="form">
+            <div class="form-group">
+              <label for="file-input" class="label">Upload CSV File</label>
+              <div class="file-input-wrapper">
+                <input type="file" id="file-input" name="file" accept=".csv" class="file-input">
+                <span class="file-label">Choose a CSV file...</span>
+              </div>
+              <small class="help-text">Required columns: short_text (message content)</small>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="use_sample" class="checkbox">
+                <span>Use sample dataset (incident_log.csv)</span>
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label for="preset" class="label">Keyword Preset</label>
+              <select id="preset" name="keyword_preset" class="select">
+                <option value="general">General (abusive keywords)</option>
+                <option value="harassment">Harassment-specific</option>
+                <option value="cyberbullying">Cyberbullying</option>
+                <option value="combined">Combined (all keywords)</option>
+              </select>
+              <small class="help-text">Choose which keywords to detect</small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">🚀 Run Analysis</button>
+          </form>
+        </div>
+
+        <div class="info-section">
+          <div class="info-card">
+            <h3>📊 What it does</h3>
+            <p>Detects abusive keywords, analyzes sentiment polarity and subjectivity, computes file integrity hashes, and generates professional forensic reports.</p>
+          </div>
+          <div class="info-card">
+            <h3>📁 Output Files</h3>
+            <p>Generates CSV results, text reports, sentiment charts, and integrity logs for chain-of-custody verification.</p>
+          </div>
+          <div class="info-card">
+            <h3>⚙️ Features</h3>
+            <p>Support for multiple keyword presets, professional visualizations, SHA256 hashing, and detailed statistical analysis.</p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>Need help? Read <a href="#" class="footer-link">documentation</a> | <a href="#" class="footer-link">examples</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

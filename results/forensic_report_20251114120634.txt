@@ -1,0 +1,50 @@
+================================================================================
+DIGITAL FORENSIC ANALYSIS REPORT - ONLINE ABUSE DETECTION
+================================================================================
+
+[EVIDENCE INFORMATION]
+Source File: C:\Users\vaide\OneDrive\Desktop\forensic_analysis\incident_log.csv
+SHA256 Hash: e77c26b79153939af46d1e4f21d05746176ead922a08a510c0da2309ed0bdf09
+Analysis Date: 2025-11-14 12:06:34 UTC
+Total Records: 20
+
+[ABUSE DETECTION RESULTS]
+Abusive Messages Found: 1
+Abuse Percentage: 5.00%
+Abusive Keywords Used: cancer, demonic, deserve, despicable, die, disgusting, evil, hate, horrible, idiot, kill, loser, pathetic, plague, scum, stupid, trash, waste, worthless
+
+[SENTIMENT ANALYSIS]
+Average Polarity: -0.1303
+Average Subjectivity: 0.6964
+Sentiment Distribution:
+  Negative: 9 (45.00%)
+  Positive: 8 (40.00%)
+  Neutral: 3 (15.00%)
+
+[DETAILED FINDINGS]
+ID         Platform        Abusive    Polarity     Sentiment   
+--------------------------------------------------------------------------------
+1          Twitter         NO         -0.8000      Negative    
+2          Facebook        NO         0.8000       Positive    
+3          Instagram       NO         -0.8000      Negative    
+4          Twitter         NO         1.0000       Positive    
+5          Facebook        YES        -1.0000      Negative    
+6          Instagram       NO         0.4250       Positive    
+7          Twitter         NO         -1.0000      Negative    
+8          Discord         NO         0.0000       Neutral     
+9          Facebook        NO         -1.0000      Negative    
+10         Twitter         NO         0.8000       Positive    
+11         Instagram       NO         0.0000       Neutral     
+12         WhatsApp        NO         0.2000       Positive    
+13         Facebook        NO         -1.0000      Negative    
+14         Twitter         NO         1.0000       Positive    
+15         Instagram       NO         -0.5000      Negative    
+16         Discord         NO         0.3182       Positive    
+17         Facebook        NO         -1.0000      Negative    
+18         Twitter         NO         0.6000       Positive    
+19         Instagram       NO         -0.6500      Negative    
+20         WhatsApp        NO         0.0000       Neutral     
+
+================================================================================
+END OF REPORT
+================================================================================
