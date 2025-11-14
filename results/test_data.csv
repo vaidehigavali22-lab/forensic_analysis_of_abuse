@@ -1,0 +1,6 @@
+id,datetime_utc,platform,url,short_text,victim_follows_abuser
+1,2025-11-12T10:00:00Z,Twitter,https://example.com,You are stupid and worthless,False
+2,2025-11-12T10:00:00Z,Facebook,https://example.com,Beautiful sunny day!,True
+3,2025-11-12T10:00:00Z,Instagram,https://example.com,I hate everything,False
+4,2025-11-12T10:00:00Z,Discord,https://example.com,Thanks for the support!,True
+5,2025-11-12T10:00:00Z,Twitter,https://example.com,You deserve to die,False

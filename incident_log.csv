@@ -1,0 +1,21 @@
+id,datetime_utc,platform,url,short_text,victim_follows_abuser
+1,2025-11-10T08:15:23Z,Twitter,https://twitter.com/user1/status/123,You are worthless and stupid,False
+2,2025-11-10T08:20:45Z,Facebook,https://facebook.com/post/456,I hope you have a great day,True
+3,2025-11-10T08:25:12Z,Instagram,https://instagram.com/photo/789,I hate everything about you,False
+4,2025-11-10T08:30:00Z,Twitter,https://twitter.com/user2/status/101,This is absolutely wonderful,True
+5,2025-11-10T08:35:22Z,Facebook,https://facebook.com/post/202,You deserve to die you pathetic loser,False
+6,2025-11-10T08:40:11Z,Instagram,https://instagram.com/photo/303,Such a beautiful sunset today,True
+7,2025-11-10T08:45:33Z,Twitter,https://twitter.com/user3/status/404,You are trash and disgusting,False
+8,2025-11-10T08:50:25Z,Discord,https://discord.com/channels/505,I appreciate your support,True
+9,2025-11-10T08:55:44Z,Facebook,https://facebook.com/post/606,Kill yourself you horrible person,False
+10,2025-11-10T09:00:15Z,Twitter,https://twitter.com/user4/status/707,Great collaboration today,True
+11,2025-11-10T09:05:33Z,Instagram,https://instagram.com/photo/808,You are a demonic plague on society,False
+12,2025-11-10T09:10:22Z,WhatsApp,https://whatsapp.com/chat/909,Thanks for helping me,True
+13,2025-11-10T09:15:11Z,Facebook,https://facebook.com/post/1010,I find you despicable and evil,False
+14,2025-11-10T09:20:44Z,Twitter,https://twitter.com/user5/status/1111,Awesome work everyone,True
+15,2025-11-10T09:25:55Z,Instagram,https://instagram.com/photo/1212,You are an idiot and a waste,False
+16,2025-11-10T09:30:33Z,Discord,https://discord.com/channels/1313,Love the new features,True
+17,2025-11-10T09:35:22Z,Facebook,https://facebook.com/post/1414,This is absolutely terrible,True
+18,2025-11-10T09:40:11Z,Twitter,https://twitter.com/user6/status/1515,The weather is nice today,True
+19,2025-11-10T09:45:00Z,Instagram,https://instagram.com/photo/1616,You disgusting scum deserves nothing,False
+20,2025-11-10T09:50:44Z,WhatsApp,https://whatsapp.com/chat/1717,Hope to see you soon,True
