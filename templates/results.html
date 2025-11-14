@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-content">
+          <h1 class="title">✅ Analysis Complete</h1>
+          <p class="subtitle">Review results and download your forensic reports</p>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="card summary-card">
+          <h2>📈 Summary Statistics</h2>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-label">Total Messages</span>
+              <span class="stat-value">{{ summary.total_messages }}</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Abusive Messages</span>
+              <span class="stat-value stat-abusive">{{ summary.abusive_count }}</span>
+              <span class="stat-percentage">({{ '%.1f'|format(summary.abusive_percentage) }}%)</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Avg Polarity</span>
+              <span class="stat-value">{{ '%.4f'|format(summary.avg_polarity) }}</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Avg Subjectivity</span>
+              <span class="stat-value">{{ '%.4f'|format(summary.avg_subjectivity) }}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card downloads-card">
+          <h2>📥 Download Results</h2>
+          <div class="download-list">
+            <a href="{{ url_for('download_file', filename=csv_file) }}" class="download-item">
+              <span class="download-icon">📊</span>
+              <div class="download-info">
+                <span class="download-name">CSV Results</span>
+                <span class="download-desc">Full dataset with analysis columns</span>
+              </div>
+            </a>
+            <a href="{{ url_for('download_file', filename=report_file) }}" class="download-item">
+              <span class="download-icon">📋</span>
+              <div class="download-info">
+                <span class="download-name">Forensic Report</span>
+                <span class="download-desc">Professional text-based report</span>
+              </div>
+            </a>
+            <a href="{{ url_for('download_file', filename=viz_file) }}" class="download-item">
+              <span class="download-icon">📈</span>
+              <div class="download-info">
+                <span class="download-name">Visualization</span>
+                <span class="download-desc">4-panel sentiment analysis chart</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="card visualization-card">
+          <h2>📊 Sentiment Analysis Visualization</h2>
+          <div class="viz-container">
+            <img src="{{ url_for('download_file', filename=viz_file) }}" alt="Sentiment Analysis Visualization" class="visualization-img">
+          </div>
+        </div>
+
+        <div class="actions-section">
+          <a href="/" class="btn btn-primary">🔄 Run Another Analysis</a>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>Analysis powered by Forensic Analysis Tool | Need help? Check the documentation</p>
+      </footer>
+    </div>
+  </body>
+</html>
